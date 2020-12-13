@@ -8,13 +8,16 @@ for(var i=0; i<document.querySelectorAll(".drum").length ; i++)
         
         
         });
-        document.addEventListener("keydown", function(event){
-                var keyCode = event.key;
-                makeSound(keyCode)
         
-        });
+}
 
-        function makeSound(key)
+document.addEventListener("keydown", function(event){
+    var keyCode = event.key;
+    makeSound(keyCode);
+
+});
+
+function makeSound(key)
         {
             switch (key) {
                 case "w":
@@ -51,8 +54,6 @@ for(var i=0; i<document.querySelectorAll(".drum").length ; i++)
                     break;
             }
         }
-
-}
 
 
 
